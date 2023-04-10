@@ -17,10 +17,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    height: 35vh;
 }
 
-.welcome p {
+.welcome p,h1 {
     text-align: center;
 }
 
