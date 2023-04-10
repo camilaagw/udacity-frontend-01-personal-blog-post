@@ -1,7 +1,8 @@
-@import url(./color.css);
-@import url(./typography.css);
-@import url(./navbar.css);
-@import url(./footer.css);
+@import url(./constants/color.css);
+@import url(./constants/typography.css);
+
+@import url(./elements/navbar.css);
+@import url(./elements/footer.css);
 
 body {
     margin: 0;
@@ -23,7 +24,7 @@ body {
     text-align: center;
 }
 
-/* Main Section */
+/* Main Section: Featured Blog Posts */
 
 h2 {
     margin: 3rem 3.5rem;
@@ -58,7 +59,7 @@ h2 {
     padding: 1.5rem;
     height: auto;
     width: auto;
-    max-width: 400px ;
+    max-width: 400px;
 }
 
 .card-img {
@@ -78,5 +79,3 @@ h2 {
 .card-link-container {
     margin: 1rem 0 0 0;
 }
-
-

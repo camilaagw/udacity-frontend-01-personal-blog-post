@@ -1,4 +1,4 @@
-@import url(./color.css);
+@import url(../constants/color.css);
 
 /* Footer */
 footer {
@@ -14,7 +14,7 @@ footer {
 
 .subscription a {
     border-radius: 0.7rem;
-    padding: .4rem  1rem;
+    padding: .4rem 1rem;
     background: var(--color-gradient-contrast);
     font-size: 0.9rem;
     text-decoration: none;

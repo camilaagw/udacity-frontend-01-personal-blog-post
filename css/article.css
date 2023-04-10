@@ -1,7 +1,8 @@
-@import url(./color.css);
-@import url(./typography.css);
-@import url(./navbar.css);
-@import url(./footer.css);
+@import url(./constants/color.css);
+@import url(./constants/typography.css);
+
+@import url(./elements/navbar.css);
+@import url(./elements/footer.css);
 
 body {
     margin: 0;
@@ -9,6 +10,7 @@ body {
     min-width: 450px;
 }
 
+/* Article general settings */
 .article {
     margin: 5rem 4em;
     max-width: 800px;
@@ -20,7 +22,6 @@ body {
     }
 }
 
-
 .article-title {
     font-size: 1.5rem;
 }
@@ -30,7 +31,7 @@ body {
 
 }
 
-/* article image */
+/* Article image */
 .article-main-image {
     margin: auto;
 }
@@ -62,12 +63,11 @@ body {
     font-size: 1.5rem;
     font-weight: 700px;
     text-align: center;
-    font-style:italic;
-    border-left:8px solid var(--color-highlight);
+    font-style: italic;
+    border-left: 8px solid var(--color-highlight);
 }
 
 /* About the author */
-
 .about-author {
     margin: 4rem auto;
     padding: 0.5rem;
@@ -79,10 +79,9 @@ body {
     grid-template-columns: 2fr 8fr;
     grid-template-rows: 0.5fr 1fr;
     grid-template-areas:
-    "img title"
-    "img description";
+        "img title"
+        "img description";
     align-items: center;
-    /* border: 1px solid blue; */
 }
 
 .about-author-img {
@@ -102,7 +101,6 @@ body {
     font-weight: 800;
     font-size: 0.9rem;
 }
-
 
 .about-author-description {
     padding: 0 1rem;
