@@ -1,0 +1,82 @@
+@import url(./color.css);
+@import url(./typography.css);
+@import url(./navbar.css);
+@import url(./footer.css);
+
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    min-width: 450px;
+}
+
+/* Welcome Section */
+.welcome {
+    background-color: var(--color-light-emphasis);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.welcome p {
+    text-align: center;
+}
+
+/* Main Section */
+
+h2 {
+    margin: 3rem 3.5rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: stretch;
+    justify-items: center;
+    gap: 2.5rem;
+    margin: 2.5rem;
+}
+
+@media (min-width: 800px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+.card {
+    border: solid 2px var(--card-border-color);
+    border-radius: 1rem;
+    box-shadow: 1px 1px 15px 1px var(--card-border-color);
+    padding: 1.5rem;
+    height: auto;
+    width: auto;
+    max-width: 400px ;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.card-date {
+    text-align: right;
+    color: gray
+}
+
+.card-summary {
+    text-align: justify;
+}
+
+.card-link-container {
+    margin: 1rem 0 0 0;
+}
+
+

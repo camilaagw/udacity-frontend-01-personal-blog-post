@@ -1,0 +1,23 @@
+@import url(./color.css);
+
+/* Navigation bar */
+nav {
+    background: var(--color-gradient);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav-link {
+    width: auto;
+    height: auto;
+    padding: 1.5em 2em 1.5em 2em;
+    color: var(--color-gradient-text);
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: var(--color-gradient-contrast);
+}

@@ -1,0 +1,112 @@
+@import url(./color.css);
+@import url(./typography.css);
+@import url(./navbar.css);
+@import url(./footer.css);
+
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    min-width: 450px;
+}
+
+.article {
+    margin: 5rem 4em;
+    max-width: 800px;
+}
+
+@media (min-width: 900px) {
+    .article {
+        margin: 5rem auto;
+    }
+}
+
+
+.article-title {
+    font-size: 1.5rem;
+}
+
+.article-author-date {
+    text-align: right;
+
+}
+
+/* article image */
+.article-main-image {
+    margin: auto;
+}
+
+.article-main-image img {
+    object-fit: cover;
+    width: 100%;
+    min-height: 400px;
+    height: 30vh;
+}
+
+.article-main-image figcaption {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    height: auto;
+}
+
+.article-content {
+    text-align: justify;
+}
+
+.article-content blockquote {
+    padding: 1rem;
+    background: var(--color-light-emphasis);
+    color: var(--color-light-text);
+    font-size: 1.5rem;
+    font-weight: 700px;
+    text-align: center;
+    font-style:italic;
+    border-left:8px solid var(--color-highlight);
+}
+
+/* About the author */
+
+.about-author {
+    margin: 4rem auto;
+    padding: 0.5rem;
+    border: solid 2px var(--card-border-color);
+    border-radius: 1rem;
+    box-shadow: 1px 1px 15px 1px var(--card-border-color);
+    display: grid;
+    width: 80%;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-areas:
+    "img title"
+    "img description";
+    align-items: center;
+    /* border: 1px solid blue; */
+}
+
+.about-author-img {
+    grid-area: img;
+}
+
+.about-author-img img {
+    width: 100%;
+    object-fit: fill;
+    border-radius: 50%;
+}
+
+.about-author-title {
+    grid-area: title;
+    padding: 0 1rem;
+    color: var(--color-light-text);
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+
+.about-author-description {
+    padding: 0 1rem;
+    grid-area: description;
+    color: var(--color-light-text);
+    font-size: 0.85rem;
+}
