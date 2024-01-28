@@ -3,7 +3,7 @@
 This is the first project from the Udacity Front-end Nanodegree.
 This project relies only on HTML and CSS to build out a personal blog website, including custom images, layout, and styling.
 
-Check out the result [here](https://github.com/camilaagw/udacity-frontend-01-personal-blog-post/deployments) :)
+Check out the result [here](https://camilaagw.github.io/udacity-frontend-01-personal-blog-post/) 😎
 
 Images sourced from:
 * https://unsplash.com/
